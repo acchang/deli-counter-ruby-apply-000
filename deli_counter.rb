@@ -17,21 +17,6 @@ end
 # we need a "katz_deli = []" outside the method to establish empty
 # we need a line_positions inside because the array now has numbers
 
-# katz_deli = []
-#
-# def line(katz_deli)
-#   if katz_deli.empty?
-#     puts "The line is currently empty."
-#   else
-#       number = 1
-#       string = "The line is currently: "
-#       katz_deli.each do |customer|
-#       string += "#{number}. #{customer}"
-#       number += 1
-#     end
-#     puts string
-#   end
-# end
 
 def line(katz_deli)
   if katz_deli.empty?
