@@ -14,10 +14,6 @@ def line(katz_deli)
   end
 end
 
-# we need a "katz_deli = []" outside the method to establish empty
-# we need a line_positions inside because the array now has numbers
-
-
 def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
