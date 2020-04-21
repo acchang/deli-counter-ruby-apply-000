@@ -46,4 +46,3 @@ def now_serving(katz_deli)
     katz_deli.shift
   end
 end
-© 2020 GitHub, Inc.
