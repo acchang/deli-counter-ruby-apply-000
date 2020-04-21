@@ -1,7 +1,7 @@
 katz_deli = []
 
 def line(katz_deli)
-  line_positions = []
+ line_positions = []
   if katz_deli.empty?
     puts "The line is currently empty."
   else
@@ -16,18 +16,33 @@ end
 
 # we need a "katz_deli = []" outside the method to establish empty
 # we need a line_positions inside because the array now has numbers
-# what does the (" ") after join do?
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
-end
+# katz_deli = []
+#
+# def line(katz_deli)
+#   if katz_deli.empty?
+#     puts "The line is currently empty."
+#   else
+#       number = 1
+#       string = "The line is currently: "
+#       katz_deli.each do |customer|
+#       string += "#{number}. #{customer}"
+#       number += 1
+#     end
+#     puts string
+#   end
+# end
 
-def now_serving(katz_deli)
+def line(katz_deli)
   if katz_deli.empty?
-    puts "There is nobody waiting to be served!"
+    puts "The line is currently empty."
   else
-    puts "Currently serving #{katz_deli.first}."
-    katz_deli.shift
+    number = 1
+    string = "The line is currently: "
+    katz_deli.each do |customer|
+      string += "#{number}. #{customer}"
+      number += 1
+    end
+    puts string
   end
 end
